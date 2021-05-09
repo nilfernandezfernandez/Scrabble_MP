@@ -1,0 +1,26 @@
+void Board::buscaParaulesNovesVertical(int min, int max)
+{
+    int j = 0;
+    bool trobat = false;
+    for (int i = 0; i < max; i++)
+    {
+        if(m_cells[min + i][m_currentWord[i].getCol()  - 1].getTilePlayed() && !m_cells[min + i][m_currentWord[i].getCol()  + 1].getTilePlayed())
+        {   
+            
+        }else if (m_cells[min + i][m_currentWord[i].getCol()  - 1].getTilePlayed())
+        {
+            /* code */
+        }else if (m_cells[min + i][m_currentWord[i].getCol()  + 1].getTilePlayed())
+        {
+            /* code */
+        }  
+    }
+    
+    
+    
+}
+
+void Board::buscarParaulesNovesHortizontal(int min, int max)
+{
+
+}
