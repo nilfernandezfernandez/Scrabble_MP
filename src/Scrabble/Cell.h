@@ -21,6 +21,7 @@ typedef enum {
 class Cell
 {
 public:
+    Cell(): m_empty(true), m_tilePlayed(false){}
     bool getEmpty()const{return m_empty;}
 
     Tile getTile()const{return m_tile;}
