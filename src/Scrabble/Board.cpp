@@ -24,16 +24,6 @@ Board::Board()
     string Dato3;
     ifstream inicialitzaTauler;
     inicialitzaTauler.open("data/Configuration/board.txt");
-    for (int i = 0; i < BOARD_COLS_AND_ROWS; i++)
-    {
-        for (int j = 0; j < BOARD_COLS_AND_ROWS; j++)
-        {
-            m_cells[i][j].setTilePlayed(false);
-            m_cells[i][j].setScoreEffect(NO_EFFECT);
-        }
-    }
-
-    
 
     if (inicialitzaTauler.is_open())
     {
